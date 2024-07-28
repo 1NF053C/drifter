@@ -1,0 +1,31 @@
+Bootstrap: docker
+From: node:20-alpine
+
+%setup
+    rm -f app.sif
+    rm -rf node_modules
+    npm cache clean --force
+
+%post
+    mkdir -p /app/
+
+%files
+    ./ /app/
+
+%post
+    cd /app/
+    apk update
+    npm i
+    npx next telemetry disable
+    npm run run-once-after-npm-install
+    npm run db:migrate
+    #npm run db:seed
+    #npm run build
+
+%runscript
+    @npm run start
+
+%labels
+    Author 1nf053c
+    Version 1.0
+    Description "Container for Nextjs app"

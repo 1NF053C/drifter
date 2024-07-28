@@ -1,0 +1,21 @@
+:root.rootsite {
+    /* forced me to add a local class */
+    --color-primary: #79ECEC;
+    --color-active: #CCEEDD;
+    overflow-y: scroll;
+}
+
+.maincontent {
+    color: white;
+    margin: 32px;
+}
+
+.blink {
+    animation: flash 2s linear infinite;
+}
+
+@keyframes flash {
+    50% {
+        opacity: 0;
+    }
+}
