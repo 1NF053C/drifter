@@ -28,7 +28,7 @@ export async function seed() {
     await mapboxPublicConfigService.create({
         startLng: coords.lng,
         startLat: coords.lat,
-        zoomLevel: 12,
+        zoomLevel: 16,
         publicKey: MAPBOX_PUBLIC_KEY
     });
 
