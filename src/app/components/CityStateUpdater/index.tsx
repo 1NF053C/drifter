@@ -18,6 +18,14 @@ export function CityStateUpdater() {
         setSearchText(e.target.value);
     }
 
+    function handleKeydown(e: any){
+        if(e.key === 'Enter'){
+            const opt = `${results[0].city}, ${results[0].state}`;
+            setSelectedOption(opt);
+            setText(opt);
+        }
+    }
+
     function handleSelectionChange(e: any) {
         setSelectedOption(e.target.value);
         setText(e.target.value); // set input text but don't trigger another search
@@ -29,6 +37,7 @@ export function CityStateUpdater() {
                 <input
                     placeholder="Enter City, State..."
                     onChange={handleChange}
+                    onKeyDown={handleKeydown}
                     className='search search__input'
                     value={text}
                 />

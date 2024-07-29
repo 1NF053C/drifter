@@ -9,6 +9,7 @@ import axios from 'axios';
 export async function seed() {
     // By default, seed mapbox config with existing public key and starting coords
     // Starting coords are based off of the provided city state string in the environment
+    // Coords can be updated by user with CityStateUpdater component
     const prisma = new PrismaClient()
     const mapboxPublicConfigService = new MapboxPublicConfigService(prisma);
 
