@@ -23,7 +23,7 @@ From: node:20-alpine
     #npm run build
 
 %runscript
-    @npm run start
+    #npm run start
 
 %labels
     Author 1nf053c

@@ -11,7 +11,7 @@ export default function MainBackground() {
                 top: 0,
                 bottom: 0,
                 backgroundColor: '#000906',
-                backgroundImage: 'radial-gradient(85% 85% at 50% 50%, hsla(185, 100%, 25%, 0.25) 0%, hsla(185, 100%, 25%, 0.12) 50%, hsla(185, 100%, 25%, 0) 100%)'
+                backgroundImage: 'radial-gradient(85% 85% at 50% 50%, hsla(240, 100%, 25%, 0.25) 0%, hsla(185, 100%, 25%, 0.12) 50%, hsla(185, 100%, 25%, 0) 100%)'
             }}>
                 <MovingLines
                     lineColor='hsla(240, 100%, 75%, 0.05)'

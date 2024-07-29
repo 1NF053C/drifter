@@ -1,8 +1,10 @@
+import { CityStateUpdater } from "./components/CityStateUpdater"
 import { MapboxMapContainer } from "./components/MapboxMapContainer"
 
 export default function Home() {
     return (
         <>
+            <CityStateUpdater />
             <MapboxMapContainer />
         </>
     )

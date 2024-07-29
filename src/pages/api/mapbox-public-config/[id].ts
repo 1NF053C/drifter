@@ -31,7 +31,7 @@ async function getMapboxPublicConfig(req: NextApiRequest, res: NextApiResponse, 
 
 async function updateMapboxPublicConfig(req: NextApiRequest, res: NextApiResponse, id: number) {
     try {
-        const mapboxPublicConfigData = req.body
+        const mapboxPublicConfigData = req.body;
         const updatedMapboxPublicConfig = await mapboxPublicConfigService.update(id, mapboxPublicConfigData)
         res.status(201).json(updatedMapboxPublicConfig)
     } catch (error) {

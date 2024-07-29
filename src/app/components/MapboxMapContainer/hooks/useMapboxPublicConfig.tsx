@@ -5,5 +5,5 @@ import { MapboxPublicConfigService } from '@/app/components/MapboxMapContainer/h
 
 export function useMapboxPublicConfig() {
     const mapboxPublicConfigService = new MapboxPublicConfigService();
-    return useSWR('mbConfigCacheKey', async () => mapboxPublicConfigService.findAll(), { refreshInterval: 20000 });
+    return useSWR('mbConfigCacheKey', async () => mapboxPublicConfigService.findAll(), { refreshInterval: 5000 });
 }

@@ -1,0 +1,23 @@
+.search {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+.search__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    caret-color: white;
+    background-color: rgba(236, 240, 241, 0.1);
+    font-size: 24px;
+    padding: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.search__input::placeholder {
+    color: white;
+    opacity: .5;
+}
