@@ -1,11 +1,17 @@
 "use client";
 
 import './index.css';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useCityStateSearch } from './hooks/useCityStateSearch';
 import { useCityStateUpdater } from './hooks/useCityStateUpdater';
 
 export function CityStateUpdater() {
+    const inputRef = useRef<any>(null)
+
+    useEffect(() => {
+        if(inputRef.current) inputRef.current.focus();
+    }, [])
+
     const [searchText, setSearchText] = useState(''); // searchText is typed text, but not selected option text
     const [text, setText] = useState(''); // text is both typed text and selected option text
     const [selectedOption, setSelectedOption] = useState('');
@@ -18,8 +24,8 @@ export function CityStateUpdater() {
         setSearchText(e.target.value);
     }
 
-    function handleKeydown(e: any){
-        if(e.key === 'Enter'){
+    function handleKeydown(e: any) {
+        if (e.key === 'Enter') {
             const opt = `${results[0].city}, ${results[0].state}`;
             setSelectedOption(opt);
             setText(opt);
@@ -35,6 +41,7 @@ export function CityStateUpdater() {
         <>
             <div className='search'>
                 <input
+                    ref={inputRef}
                     placeholder="Enter City, State..."
                     onChange={handleChange}
                     onKeyDown={handleKeydown}
