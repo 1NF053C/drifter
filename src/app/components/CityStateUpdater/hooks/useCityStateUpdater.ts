@@ -13,7 +13,6 @@ export function useCityStateUpdater(selectedOption: string) {
                 const response = await axios.post(`${getHostPort()}/api/geocode`, {
                     cityState: selectedOption
                 });
-                console.log(response);
                 const configs = await mapboxPublicConfigService.findAll();
                 const config = configs[0];
                 config.startLat = response.data.lat;

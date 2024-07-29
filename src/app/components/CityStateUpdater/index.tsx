@@ -36,6 +36,7 @@ export function CityStateUpdater() {
                     className="search search__select"
                     value={selectedOption}
                     onChange={handleSelectionChange}
+                    onClick={handleSelectionChange}
                 >
                     {
                         results.map(r => {
