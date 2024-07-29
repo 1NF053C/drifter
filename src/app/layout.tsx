@@ -12,10 +12,10 @@ export default function RootLayout({
   return (
     <html className={style.rootsite} lang="en">
       <body className={style.maincontent + ' ' + inter.className}>
-        <MainBackground />
         <main style={{ position: 'relative', zIndex: 1 }}>
-            {children}
+          {children}
         </main>
+        <MainBackground />
       </body>
     </html>
   )
