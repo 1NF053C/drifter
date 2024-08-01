@@ -38,37 +38,37 @@ export function CityStateUpdater() {
     }
 
     return (
-        <div style={{ position: 'relative', width: '400px', height: '40px' }}>
+        <>
             <div className='search'>
-                <Glowinput>
-                    <input
-                        ref={ref}
-                        placeholder="City, State"
-                        onChange={handleChange}
-                        onKeyDown={handleKeydown}
-                        className='search search__input'
-                        value={text}
-                    />
-                </Glowinput>
-                <select
-                    className="search search__select"
-                    value={selectedOption}
-                    onChange={handleSelectionChange}
-                    onClick={handleSelectionChange}
-                >
-                    {
-                        results.map(r => {
-                            const opt = `${r.city}, ${r.state}`;
-                            return <option key={opt} value={opt}>{opt}</option>
-                        })
-                    }
-                </select>
+                <Glowinput />
+                <input
+                    className='search search__input'
+                    ref={ref}
+                    placeholder="City, State"
+                    onChange={handleChange}
+                    onKeyDown={handleKeydown}
+                    value={text}
+                />
             </div>
-        </div>
+            <select
+                className="search search__select"
+                value={selectedOption}
+                onChange={handleSelectionChange}
+                onClick={handleSelectionChange}
+            >
+                {
+                    results.map(r => {
+                        const opt = `${r.city}, ${r.state}`;
+                        return <option key={opt} value={opt}>{opt}</option>
+                    })
+                }
+            </select>
+
+        </>
     )
 }
 
-const Glowinput = ({ children }: any) => {
+const Glowinput = () => {
     const frameRef = useRef<SVGSVGElement | null>(null);
     useFrameSVGAssembler(frameRef);
     return (
@@ -84,7 +84,6 @@ const Glowinput = ({ children }: any) => {
                 }}
                 padding={4}
             />
-            {children}
         </div>
     )
 }

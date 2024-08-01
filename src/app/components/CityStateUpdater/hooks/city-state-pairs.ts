@@ -1,4 +1,7 @@
 export type CityStatePair = { city: string, state: string }
+// THIS LIST HAS NOT BEEN CHECKED AGAINST ANY OFFICIAL SOURCES
+// IT WAS COPIED FROM THE INTERNET
+// FOR DEMO PURPOSES ONLY
 export const cityStatePairs = [
   {
     "city": "Alabaster",
@@ -381,10 +384,6 @@ export const cityStatePairs = [
     "state": "Alaska"
   },
   {
-    "city": "Knik-Fairview",
-    "state": "Alaska"
-  },
-  {
     "city": "Kodiak",
     "state": "Alaska"
   },
@@ -450,14 +449,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Cottonwood",
-    "state": "Arizona"
-  },
-  {
-    "city": "Cottonwood-Verde Village",
-    "state": "Arizona"
-  },
-  {
-    "city": "Dewey-Humboldt",
     "state": "Arizona"
   },
   {
@@ -540,10 +531,7 @@ export const cityStatePairs = [
     "city": "Mohave Valley",
     "state": "Arizona"
   },
-  {
-    "city": "New Kingman-Butler",
-    "state": "Arizona"
-  },
+
   {
     "city": "New River",
     "state": "Arizona"
@@ -956,10 +944,7 @@ export const cityStatePairs = [
     "city": "Arcata",
     "state": "California"
   },
-  {
-    "city": "Arden-Arcade",
-    "state": "California"
-  },
+
   {
     "city": "Arroyo Grande",
     "state": "California"
@@ -1028,10 +1013,7 @@ export const cityStatePairs = [
     "city": "Bay Point",
     "state": "California"
   },
-  {
-    "city": "Baywood-Los Osos",
-    "state": "California"
-  },
+
   {
     "city": "Beaumont",
     "state": "California"
@@ -1068,10 +1050,7 @@ export const cityStatePairs = [
     "city": "Beverly Hills",
     "state": "California"
   },
-  {
-    "city": "Blackhawk-Camino Tassajara",
-    "state": "California"
-  },
+
   {
     "city": "Bloomington",
     "state": "California"
@@ -1080,10 +1059,7 @@ export const cityStatePairs = [
     "city": "Blythe",
     "state": "California"
   },
-  {
-    "city": "Bonadelle Ranchos-Madera Ranchos",
-    "state": "California"
-  },
+
   {
     "city": "Bonita",
     "state": "California"
@@ -1188,10 +1164,7 @@ export const cityStatePairs = [
     "city": "Carson",
     "state": "California"
   },
-  {
-    "city": "Casa de Oro-Mount Helix",
-    "state": "California"
-  },
+
   {
     "city": "Castro Valley",
     "state": "California"
@@ -1540,10 +1513,7 @@ export const cityStatePairs = [
     "city": "Fillmore",
     "state": "California"
   },
-  {
-    "city": "Florence-Graham",
-    "state": "California"
-  },
+
   {
     "city": "Florin",
     "state": "California"
@@ -1784,10 +1754,7 @@ export const cityStatePairs = [
     "city": "La Canada Flintridge",
     "state": "California"
   },
-  {
-    "city": "La Crescenta-Montrose",
-    "state": "California"
-  },
+
   {
     "city": "La Habra",
     "state": "California"
@@ -1848,10 +1815,7 @@ export const cityStatePairs = [
     "city": "Laguna Niguel",
     "state": "California"
   },
-  {
-    "city": "Laguna West-Lakeside",
-    "state": "California"
-  },
+
   {
     "city": "Laguna Woods",
     "state": "California"
@@ -1888,10 +1852,7 @@ export const cityStatePairs = [
     "city": "Lancaster",
     "state": "California"
   },
-  {
-    "city": "Larkfield-Wikiup",
-    "state": "California"
-  },
+
   {
     "city": "Larkspur",
     "state": "California"
@@ -1926,10 +1887,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Lindsay",
-    "state": "California"
-  },
-  {
-    "city": "Live Oak",
     "state": "California"
   },
   {
@@ -1992,10 +1949,7 @@ export const cityStatePairs = [
     "city": "Los Gatos",
     "state": "California"
   },
-  {
-    "city": "Lucas Valley-Marinwood",
-    "state": "California"
-  },
+
   {
     "city": "Lynwood",
     "state": "California"
@@ -2320,10 +2274,7 @@ export const cityStatePairs = [
     "city": "Paramount",
     "state": "California"
   },
-  {
-    "city": "Parkway-South Sacramento",
-    "state": "California"
-  },
+
   {
     "city": "Parlier",
     "state": "California"
@@ -2840,10 +2791,7 @@ export const cityStatePairs = [
     "city": "Taft",
     "state": "California"
   },
-  {
-    "city": "Tamalpais-Homestead Valley",
-    "state": "California"
-  },
+
   {
     "city": "Tehachapi",
     "state": "California"
@@ -2944,10 +2892,7 @@ export const cityStatePairs = [
     "city": "Victorville",
     "state": "California"
   },
-  {
-    "city": "View Park-Windsor Hills",
-    "state": "California"
-  },
+
   {
     "city": "Vincent",
     "state": "California"
@@ -3016,10 +2961,7 @@ export const cityStatePairs = [
     "city": "West Sacramento",
     "state": "California"
   },
-  {
-    "city": "West Whittier-Los Nietos",
-    "state": "California"
-  },
+
   {
     "city": "Westlake Village",
     "state": "California"
@@ -3340,10 +3282,7 @@ export const cityStatePairs = [
     "city": "Rifle",
     "state": "Colorado"
   },
-  {
-    "city": "Security-Widefield",
-    "state": "Colorado"
-  },
+
   {
     "city": "Sherrelwood",
     "state": "Colorado"
@@ -3417,19 +3356,11 @@ export const cityStatePairs = [
     "state": "Connecticut"
   },
   {
-    "city": "Ansonia",
-    "state": "Connecticut"
-  },
-  {
     "city": "Avon",
     "state": "Connecticut"
   },
   {
     "city": "Berlin",
-    "state": "Connecticut"
-  },
-  {
-    "city": "Bethel",
     "state": "Connecticut"
   },
   {
@@ -3446,14 +3377,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Bridgeport",
-    "state": "Connecticut"
-  },
-  {
-    "city": "Bridgeport",
-    "state": "Connecticut"
-  },
-  {
-    "city": "Bristol",
     "state": "Connecticut"
   },
   {
@@ -3492,10 +3415,7 @@ export const cityStatePairs = [
     "city": "Colchester",
     "state": "Connecticut"
   },
-  {
-    "city": "Conning Towers-Nautilus Park",
-    "state": "Connecticut"
-  },
+
   {
     "city": "Coventry",
     "state": "Connecticut"
@@ -3593,10 +3513,6 @@ export const cityStatePairs = [
     "state": "Connecticut"
   },
   {
-    "city": "Groton",
-    "state": "Connecticut"
-  },
-  {
     "city": "Guilford",
     "state": "Connecticut"
   },
@@ -3657,23 +3573,11 @@ export const cityStatePairs = [
     "state": "Connecticut"
   },
   {
-    "city": "Meriden",
-    "state": "Connecticut"
-  },
-  {
     "city": "Middlebury",
     "state": "Connecticut"
   },
   {
     "city": "Middletown",
-    "state": "Connecticut"
-  },
-  {
-    "city": "Middletown",
-    "state": "Connecticut"
-  },
-  {
-    "city": "Milford",
     "state": "Connecticut"
   },
   {
@@ -3690,14 +3594,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Naugatuck",
-    "state": "Connecticut"
-  },
-  {
-    "city": "Naugatuck",
-    "state": "Connecticut"
-  },
-  {
-    "city": "New Britain",
     "state": "Connecticut"
   },
   {
@@ -3825,10 +3721,6 @@ export const cityStatePairs = [
     "state": "Connecticut"
   },
   {
-    "city": "Shelton",
-    "state": "Connecticut"
-  },
-  {
     "city": "Simsbury",
     "state": "Connecticut"
   },
@@ -3861,19 +3753,11 @@ export const cityStatePairs = [
     "state": "Connecticut"
   },
   {
-    "city": "Stamford",
-    "state": "Connecticut"
-  },
-  {
     "city": "Stonington",
     "state": "Connecticut"
   },
   {
     "city": "Storrs",
-    "state": "Connecticut"
-  },
-  {
-    "city": "Stratford",
     "state": "Connecticut"
   },
   {
@@ -3902,14 +3786,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Torrington",
-    "state": "Connecticut"
-  },
-  {
-    "city": "Torrington",
-    "state": "Connecticut"
-  },
-  {
-    "city": "Trumbull",
     "state": "Connecticut"
   },
   {
@@ -3961,14 +3837,6 @@ export const cityStatePairs = [
     "state": "Connecticut"
   },
   {
-    "city": "Westport",
-    "state": "Connecticut"
-  },
-  {
-    "city": "Wethersfield",
-    "state": "Connecticut"
-  },
-  {
     "city": "Wethersfield",
     "state": "Connecticut"
   },
@@ -3990,10 +3858,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Windsor",
-    "state": "Connecticut"
-  },
-  {
-    "city": "Windsor Locks",
     "state": "Connecticut"
   },
   {
@@ -4140,10 +4004,7 @@ export const cityStatePairs = [
     "city": "Bee Ridge",
     "state": "Florida"
   },
-  {
-    "city": "Bellair-Meadowbrook Terrace",
-    "state": "Florida"
-  },
+
   {
     "city": "Belle Glade",
     "state": "Florida"
@@ -4260,10 +4121,7 @@ export const cityStatePairs = [
     "city": "Coconut Creek",
     "state": "Florida"
   },
-  {
-    "city": "Collier Manor-Cresthaven",
-    "state": "Florida"
-  },
+
   {
     "city": "Conway",
     "state": "Florida"
@@ -4380,10 +4238,7 @@ export const cityStatePairs = [
     "city": "Eglin AFB",
     "state": "Florida"
   },
-  {
-    "city": "Egypt Lake-Leto",
-    "state": "Florida"
-  },
+
   {
     "city": "Elfers",
     "state": "Florida"
@@ -5000,14 +4855,8 @@ export const cityStatePairs = [
     "city": "Olympia Heights",
     "state": "Florida"
   },
-  {
-    "city": "Opa-locka",
-    "state": "Florida"
-  },
-  {
-    "city": "Opa-locka North",
-    "state": "Florida"
-  },
+
+
   {
     "city": "Orange City",
     "state": "Florida"
@@ -5028,10 +4877,7 @@ export const cityStatePairs = [
     "city": "Ormond Beach",
     "state": "Florida"
   },
-  {
-    "city": "Ormond-By-The-Sea",
-    "state": "Florida"
-  },
+
   {
     "city": "Oviedo",
     "state": "Florida"
@@ -5068,10 +4914,7 @@ export const cityStatePairs = [
     "city": "Palm Harbor",
     "state": "Florida"
   },
-  {
-    "city": "Palm River-Clair Mel",
-    "state": "Florida"
-  },
+
   {
     "city": "Palm Springs",
     "state": "Florida"
@@ -5516,10 +5359,7 @@ export const cityStatePairs = [
     "city": "Westchester",
     "state": "Florida"
   },
-  {
-    "city": "Westgate-Belvedere Homes",
-    "state": "Florida"
-  },
+
   {
     "city": "Weston",
     "state": "Florida"
@@ -5592,10 +5432,7 @@ export const cityStatePairs = [
     "city": "Americus",
     "state": "Georgia"
   },
-  {
-    "city": "Athens-Clarke County",
-    "state": "Georgia"
-  },
+
   {
     "city": "Atlanta",
     "state": "Georgia"
@@ -5604,10 +5441,7 @@ export const cityStatePairs = [
     "city": "Auburn",
     "state": "Georgia"
   },
-  {
-    "city": "Augusta-Richmond County",
-    "state": "Georgia"
-  },
+
   {
     "city": "Bainbridge",
     "state": "Georgia"
@@ -5632,10 +5466,7 @@ export const cityStatePairs = [
     "city": "Calhoun",
     "state": "Georgia"
   },
-  {
-    "city": "Candler-McAfee",
-    "state": "Georgia"
-  },
+
   {
     "city": "Canton",
     "state": "Georgia"
@@ -6068,10 +5899,7 @@ export const cityStatePairs = [
     "city": "Ewa Beach",
     "state": "Hawaii"
   },
-  {
-    "city": "Haiku-Pauwela",
-    "state": "Hawaii"
-  },
+
   {
     "city": "Halawa",
     "state": "Hawaii"
@@ -6094,10 +5922,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Kahului",
-    "state": "Hawaii"
-  },
-  {
-    "city": "Kailua",
     "state": "Hawaii"
   },
   {
@@ -6148,10 +5972,7 @@ export const cityStatePairs = [
     "city": "Nanakuli",
     "state": "Hawaii"
   },
-  {
-    "city": "Napili-Honokowai",
-    "state": "Hawaii"
-  },
+
   {
     "city": "Pearl City",
     "state": "Hawaii"
@@ -6176,10 +5997,7 @@ export const cityStatePairs = [
     "city": "Waianae",
     "state": "Hawaii"
   },
-  {
-    "city": "Waihee-Waiehu",
-    "state": "Hawaii"
-  },
+
   {
     "city": "Wailuku",
     "state": "Hawaii"
@@ -8436,10 +8254,7 @@ export const cityStatePairs = [
     "city": "Leitchfield",
     "state": "Kentucky"
   },
-  {
-    "city": "Lexington-Fayette",
-    "state": "Kentucky"
-  },
+
   {
     "city": "Louisville",
     "state": "Kentucky"
@@ -8624,10 +8439,7 @@ export const cityStatePairs = [
     "city": "Bridge City",
     "state": "Louisiana"
   },
-  {
-    "city": "Brownsville-Bawcomville",
-    "state": "Louisiana"
-  },
+
   {
     "city": "Carencro",
     "state": "Louisiana"
@@ -8961,10 +8773,6 @@ export const cityStatePairs = [
     "state": "Maine"
   },
   {
-    "city": "Brunswick",
-    "state": "Maine"
-  },
-  {
     "city": "Buxton",
     "state": "Maine"
   },
@@ -9041,15 +8849,7 @@ export const cityStatePairs = [
     "state": "Maine"
   },
   {
-    "city": "Old Orchard Beach",
-    "state": "Maine"
-  },
-  {
     "city": "Old Town",
-    "state": "Maine"
-  },
-  {
-    "city": "Orono",
     "state": "Maine"
   },
   {
@@ -9081,15 +8881,7 @@ export const cityStatePairs = [
     "state": "Maine"
   },
   {
-    "city": "Sanford",
-    "state": "Maine"
-  },
-  {
     "city": "Scarborough",
-    "state": "Maine"
-  },
-  {
-    "city": "Skowhegan",
     "state": "Maine"
   },
   {
@@ -9106,10 +8898,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Standish",
-    "state": "Maine"
-  },
-  {
-    "city": "Topsham",
     "state": "Maine"
   },
   {
@@ -9134,10 +8922,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Windham",
-    "state": "Maine"
-  },
-  {
-    "city": "Winslow",
     "state": "Maine"
   },
   {
@@ -9268,10 +9052,7 @@ export const cityStatePairs = [
     "city": "Catonsville",
     "state": "Maryland"
   },
-  {
-    "city": "Chesapeake Ranch Estates-Drum Point",
-    "state": "Maryland"
-  },
+
   {
     "city": "Cheverly",
     "state": "Maryland"
@@ -9504,14 +9285,8 @@ export const cityStatePairs = [
     "city": "Langley Park",
     "state": "Maryland"
   },
-  {
-    "city": "Lanham-Seabrook",
-    "state": "Maryland"
-  },
-  {
-    "city": "Lansdowne-Baltimore Highlands",
-    "state": "Maryland"
-  },
+
+
   {
     "city": "Largo",
     "state": "Maryland"
@@ -9524,10 +9299,7 @@ export const cityStatePairs = [
     "city": "Lexington Park",
     "state": "Maryland"
   },
-  {
-    "city": "Linganore-Bartonsville",
-    "state": "Maryland"
-  },
+
   {
     "city": "Linthicum",
     "state": "Maryland"
@@ -9540,10 +9312,7 @@ export const cityStatePairs = [
     "city": "Londontowne",
     "state": "Maryland"
   },
-  {
-    "city": "Lutherville-Timonium",
-    "state": "Maryland"
-  },
+
   {
     "city": "Marlow Heights",
     "state": "Maryland"
@@ -9628,10 +9397,7 @@ export const cityStatePairs = [
     "city": "Owings Mills",
     "state": "Maryland"
   },
-  {
-    "city": "Oxon Hill-Glassmanor",
-    "state": "Maryland"
-  },
+
   {
     "city": "Parkville",
     "state": "Maryland"
@@ -9704,10 +9470,7 @@ export const cityStatePairs = [
     "city": "Salisbury",
     "state": "Maryland"
   },
-  {
-    "city": "Savage-Guilford",
-    "state": "Maryland"
-  },
+
   {
     "city": "Severn",
     "state": "Maryland"
@@ -9736,10 +9499,7 @@ export const cityStatePairs = [
     "city": "St. Charles",
     "state": "Maryland"
   },
-  {
-    "city": "Suitland-Silver Hill",
-    "state": "Maryland"
-  },
+
   {
     "city": "Takoma Park",
     "state": "Maryland"
@@ -9768,10 +9528,7 @@ export const cityStatePairs = [
     "city": "Westminster",
     "state": "Maryland"
   },
-  {
-    "city": "Wheaton-Glenmont",
-    "state": "Maryland"
-  },
+
   {
     "city": "White Marsh",
     "state": "Maryland"
@@ -9813,10 +9570,6 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Amesbury",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Amherst",
     "state": "Massachusetts"
   },
@@ -9829,23 +9582,11 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Andover",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Arlington",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Arlington",
     "state": "Massachusetts"
   },
   {
     "city": "Ashland",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Athol",
     "state": "Massachusetts"
   },
   {
@@ -9885,10 +9626,6 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Belmont",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Beverly",
     "state": "Massachusetts"
   },
@@ -9917,15 +9654,7 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Braintree",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Brewster",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Bridgewater",
     "state": "Massachusetts"
   },
   {
@@ -9938,14 +9667,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Brookline",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Brookline",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Burlington",
     "state": "Massachusetts"
   },
   {
@@ -9989,10 +9710,6 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Clinton",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Cochituate",
     "state": "Massachusetts"
   },
@@ -10013,15 +9730,7 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Danvers",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Dartmouth",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Dedham",
     "state": "Massachusetts"
   },
   {
@@ -10101,10 +9810,6 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Framingham",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Franklin",
     "state": "Massachusetts"
   },
@@ -10134,10 +9839,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Great Barrington",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Greenfield",
     "state": "Massachusetts"
   },
   {
@@ -10185,10 +9886,6 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Holbrook",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Holden",
     "state": "Massachusetts"
   },
@@ -10206,14 +9903,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Hudson",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Hudson",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Hull",
     "state": "Massachusetts"
   },
   {
@@ -10253,19 +9942,11 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Lexington",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Lincoln",
     "state": "Massachusetts"
   },
   {
     "city": "Littleton",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Longmeadow",
     "state": "Massachusetts"
   },
   {
@@ -10293,10 +9974,6 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Lynnfield",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Malden",
     "state": "Massachusetts"
   },
@@ -10306,10 +9983,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Mansfield Center",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Marblehead",
     "state": "Massachusetts"
   },
   {
@@ -10334,14 +10007,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Maynard",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Maynard",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Medfield",
     "state": "Massachusetts"
   },
   {
@@ -10385,19 +10050,11 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Milford",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Millbury",
     "state": "Massachusetts"
   },
   {
     "city": "Millis",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Milton",
     "state": "Massachusetts"
   },
   {
@@ -10418,10 +10075,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Natick",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Needham",
     "state": "Massachusetts"
   },
   {
@@ -10481,10 +10134,6 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Northborough",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Northbridge",
     "state": "Massachusetts"
   },
@@ -10494,10 +10143,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Norwell",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Norwood",
     "state": "Massachusetts"
   },
   {
@@ -10549,10 +10194,6 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Plymouth",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Quincy",
     "state": "Massachusetts"
   },
@@ -10561,15 +10202,7 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Randolph",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Raynham",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Reading",
     "state": "Massachusetts"
   },
   {
@@ -10613,10 +10246,6 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Saugus",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Scituate",
     "state": "Massachusetts"
   },
@@ -10634,10 +10263,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Shrewsbury",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Somerset",
     "state": "Massachusetts"
   },
   {
@@ -10665,15 +10290,7 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Southbridge",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Southwick",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Spencer",
     "state": "Massachusetts"
   },
   {
@@ -10686,10 +10303,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Sterling",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Stoneham",
     "state": "Massachusetts"
   },
   {
@@ -10710,10 +10323,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Sutton",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Swampscott",
     "state": "Massachusetts"
   },
   {
@@ -10757,19 +10366,11 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Wakefield",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Walpole",
     "state": "Massachusetts"
   },
   {
     "city": "Waltham",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Ware",
     "state": "Massachusetts"
   },
   {
@@ -10793,14 +10394,6 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Webster",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Wellesley",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Wellesley",
     "state": "Massachusetts"
   },
@@ -10810,10 +10403,6 @@ export const cityStatePairs = [
   },
   {
     "city": "West Bridgewater",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "West Springfield",
     "state": "Massachusetts"
   },
   {
@@ -10857,10 +10446,6 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Weymouth",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Whitinsville",
     "state": "Massachusetts"
   },
@@ -10881,23 +10466,11 @@ export const cityStatePairs = [
     "state": "Massachusetts"
   },
   {
-    "city": "Wilmington",
-    "state": "Massachusetts"
-  },
-  {
     "city": "Winchendon",
     "state": "Massachusetts"
   },
   {
     "city": "Winchester",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Winchester",
-    "state": "Massachusetts"
-  },
-  {
-    "city": "Winthrop",
     "state": "Massachusetts"
   },
   {
@@ -12744,10 +12317,7 @@ export const cityStatePairs = [
     "city": "Wildwood",
     "state": "Missouri"
   },
-  {
-    "city": "Anaconda-Deer Lodge County",
-    "state": "Montana"
-  },
+
   {
     "city": "Billings",
     "state": "Montana"
@@ -12756,10 +12326,7 @@ export const cityStatePairs = [
     "city": "Bozeman",
     "state": "Montana"
   },
-  {
-    "city": "Butte-Silver Bow",
-    "state": "Montana"
-  },
+
   {
     "city": "Evergreen",
     "state": "Montana"
@@ -12956,10 +12523,7 @@ export const cityStatePairs = [
     "city": "Henderson",
     "state": "Nevada"
   },
-  {
-    "city": "Incline Village-Crystal Bay",
-    "state": "Nevada"
-  },
+
   {
     "city": "Las Vegas",
     "state": "Nevada"
@@ -12968,10 +12532,7 @@ export const cityStatePairs = [
     "city": "Laughlin",
     "state": "Nevada"
   },
-  {
-    "city": "Lemmon Valley-Golden Valley",
-    "state": "Nevada"
-  },
+
   {
     "city": "Mesquite",
     "state": "Nevada"
@@ -13077,23 +12638,11 @@ export const cityStatePairs = [
     "state": "New Hampshire"
   },
   {
-    "city": "Derry",
-    "state": "New Hampshire"
-  },
-  {
     "city": "Dover",
     "state": "New Hampshire"
   },
   {
     "city": "Durham",
-    "state": "New Hampshire"
-  },
-  {
-    "city": "Durham",
-    "state": "New Hampshire"
-  },
-  {
-    "city": "Exeter",
     "state": "New Hampshire"
   },
   {
@@ -13121,14 +12670,6 @@ export const cityStatePairs = [
     "state": "New Hampshire"
   },
   {
-    "city": "Hampton",
-    "state": "New Hampshire"
-  },
-  {
-    "city": "Hanover",
-    "state": "New Hampshire"
-  },
-  {
     "city": "Hanover",
     "state": "New Hampshire"
   },
@@ -13138,10 +12679,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Hooksett",
-    "state": "New Hampshire"
-  },
-  {
-    "city": "Hudson",
     "state": "New Hampshire"
   },
   {
@@ -13169,19 +12706,11 @@ export const cityStatePairs = [
     "state": "New Hampshire"
   },
   {
-    "city": "Londonderry",
-    "state": "New Hampshire"
-  },
-  {
     "city": "Manchester",
     "state": "New Hampshire"
   },
   {
     "city": "Merrimack",
-    "state": "New Hampshire"
-  },
-  {
-    "city": "Milford",
     "state": "New Hampshire"
   },
   {
@@ -13284,10 +12813,7 @@ export const cityStatePairs = [
     "city": "Avenel",
     "state": "New Jersey"
   },
-  {
-    "city": "Barclay-Kingston",
-    "state": "New Jersey"
-  },
+
   {
     "city": "Barrington",
     "state": "New Jersey"
@@ -13500,10 +13026,7 @@ export const cityStatePairs = [
     "city": "Englewood",
     "state": "New Jersey"
   },
-  {
-    "city": "Erlton-Ellisburg",
-    "state": "New Jersey"
-  },
+
   {
     "city": "Ewing",
     "state": "New Jersey"
@@ -13524,10 +13047,7 @@ export const cityStatePairs = [
     "city": "Fanwood",
     "state": "New Jersey"
   },
-  {
-    "city": "Florence-Roebling",
-    "state": "New Jersey"
-  },
+
   {
     "city": "Florham Park",
     "state": "New Jersey"
@@ -13632,10 +13152,7 @@ export const cityStatePairs = [
     "city": "Hoboken",
     "state": "New Jersey"
   },
-  {
-    "city": "Holiday City-Berkeley",
-    "state": "New Jersey"
-  },
+
   {
     "city": "Hopatcong",
     "state": "New Jersey"
@@ -13692,10 +13209,7 @@ export const cityStatePairs = [
     "city": "Laurence Harbor",
     "state": "New Jersey"
   },
-  {
-    "city": "Leisure Village West-Pine Lake Park",
-    "state": "New Jersey"
-  },
+
   {
     "city": "Leonia",
     "state": "New Jersey"
@@ -13788,10 +13302,7 @@ export const cityStatePairs = [
     "city": "McGuire AFB",
     "state": "New Jersey"
   },
-  {
-    "city": "Mercerville-Hamilton Square",
-    "state": "New Jersey"
-  },
+
   {
     "city": "Metuchen",
     "state": "New Jersey"
@@ -13824,10 +13335,7 @@ export const cityStatePairs = [
     "city": "Montvale",
     "state": "New Jersey"
   },
-  {
-    "city": "Moorestown-Lenola",
-    "state": "New Jersey"
-  },
+
   {
     "city": "Morganville",
     "state": "New Jersey"
@@ -14124,10 +13632,7 @@ export const cityStatePairs = [
     "city": "Strathmore",
     "state": "New Jersey"
   },
-  {
-    "city": "Succasunna-Kenvil",
-    "state": "New Jersey"
-  },
+
   {
     "city": "Summit",
     "state": "New Jersey"
@@ -14268,10 +13773,7 @@ export const cityStatePairs = [
     "city": "Williamstown",
     "state": "New Jersey"
   },
-  {
-    "city": "Wood-Ridge",
-    "state": "New Jersey"
-  },
+
   {
     "city": "Woodbridge",
     "state": "New Jersey"
@@ -14284,10 +13786,7 @@ export const cityStatePairs = [
     "city": "Wyckoff",
     "state": "New Jersey"
   },
-  {
-    "city": "Yardville-Groveville",
-    "state": "New Jersey"
-  },
+
   {
     "city": "Yorketown",
     "state": "New Jersey"
@@ -14461,10 +13960,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Albion",
-    "state": "New York"
-  },
-  {
     "city": "Alden",
     "state": "New York"
   },
@@ -14510,10 +14005,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Avon",
-    "state": "New York"
-  },
-  {
-    "city": "Babylon",
     "state": "New York"
   },
   {
@@ -14621,10 +14112,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Brighton",
-    "state": "New York"
-  },
-  {
     "city": "Brockport",
     "state": "New York"
   },
@@ -14654,10 +14141,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Camillus",
-    "state": "New York"
-  },
-  {
-    "city": "Canandaigua",
     "state": "New York"
   },
   {
@@ -14698,10 +14181,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Chappaqua",
-    "state": "New York"
-  },
-  {
-    "city": "Cheektowaga",
     "state": "New York"
   },
   {
@@ -14773,10 +14252,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Colonie",
-    "state": "New York"
-  },
-  {
     "city": "Commack",
     "state": "New York"
   },
@@ -14794,10 +14269,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Coram",
-    "state": "New York"
-  },
-  {
-    "city": "Corning",
     "state": "New York"
   },
   {
@@ -14828,10 +14299,7 @@ export const cityStatePairs = [
     "city": "Crawford",
     "state": "New York"
   },
-  {
-    "city": "Croton-on-Hudson",
-    "state": "New York"
-  },
+
   {
     "city": "De Witt",
     "state": "New York"
@@ -14921,15 +14389,7 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "East Rochester",
-    "state": "New York"
-  },
-  {
     "city": "East Rockaway",
-    "state": "New York"
-  },
-  {
-    "city": "Eastchester",
     "state": "New York"
   },
   {
@@ -14950,10 +14410,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Elma",
-    "state": "New York"
-  },
-  {
-    "city": "Elmira",
     "state": "New York"
   },
   {
@@ -15064,16 +14520,9 @@ export const cityStatePairs = [
     "city": "Gates",
     "state": "New York"
   },
-  {
-    "city": "Gates-North Gates",
-    "state": "New York"
-  },
+
   {
     "city": "Geddes",
-    "state": "New York"
-  },
-  {
-    "city": "Geneseo",
     "state": "New York"
   },
   {
@@ -15141,10 +14590,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Greece",
-    "state": "New York"
-  },
-  {
     "city": "Greenburgh",
     "state": "New York"
   },
@@ -15173,10 +14618,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Hamburg",
-    "state": "New York"
-  },
-  {
     "city": "Hamlin",
     "state": "New York"
   },
@@ -15193,10 +14634,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Harrison",
-    "state": "New York"
-  },
-  {
     "city": "Hartsdale",
     "state": "New York"
   },
@@ -15204,10 +14641,7 @@ export const cityStatePairs = [
     "city": "Hastings",
     "state": "New York"
   },
-  {
-    "city": "Hastings-on-Hudson",
-    "state": "New York"
-  },
+
   {
     "city": "Hauppauge",
     "state": "New York"
@@ -15217,23 +14651,11 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Haverstraw",
-    "state": "New York"
-  },
-  {
-    "city": "Hempstead",
-    "state": "New York"
-  },
-  {
     "city": "Hempstead",
     "state": "New York"
   },
   {
     "city": "Henrietta",
-    "state": "New York"
-  },
-  {
-    "city": "Herkimer",
     "state": "New York"
   },
   {
@@ -15281,19 +14703,11 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Horseheads",
-    "state": "New York"
-  },
-  {
     "city": "Hudson",
     "state": "New York"
   },
   {
     "city": "Hudson Falls",
-    "state": "New York"
-  },
-  {
-    "city": "Huntington",
     "state": "New York"
   },
   {
@@ -15325,23 +14739,11 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Irondequoit",
-    "state": "New York"
-  },
-  {
     "city": "Irvington",
     "state": "New York"
   },
   {
     "city": "Islip",
-    "state": "New York"
-  },
-  {
-    "city": "Islip",
-    "state": "New York"
-  },
-  {
-    "city": "Ithaca",
     "state": "New York"
   },
   {
@@ -15352,20 +14754,13 @@ export const cityStatePairs = [
     "city": "Jamestown",
     "state": "New York"
   },
-  {
-    "city": "Jefferson Valley-Yorktown",
-    "state": "New York"
-  },
+
   {
     "city": "Jericho",
     "state": "New York"
   },
   {
     "city": "Johnson City",
-    "state": "New York"
-  },
-  {
-    "city": "Johnstown",
     "state": "New York"
   },
   {
@@ -15422,10 +14817,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Lake Ronkonkoma",
-    "state": "New York"
-  },
-  {
-    "city": "Lancaster",
     "state": "New York"
   },
   {
@@ -15493,10 +14884,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Lockport",
-    "state": "New York"
-  },
-  {
     "city": "Long Beach",
     "state": "New York"
   },
@@ -15521,10 +14908,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Malone",
-    "state": "New York"
-  },
-  {
     "city": "Malta",
     "state": "New York"
   },
@@ -15534,10 +14917,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Mamakating",
-    "state": "New York"
-  },
-  {
-    "city": "Mamaroneck",
     "state": "New York"
   },
   {
@@ -15582,10 +14961,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Massapequa Park",
-    "state": "New York"
-  },
-  {
-    "city": "Massena",
     "state": "New York"
   },
   {
@@ -15661,10 +15036,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Monroe",
-    "state": "New York"
-  },
-  {
     "city": "Monsey",
     "state": "New York"
   },
@@ -15686,10 +15057,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Mount Ivy",
-    "state": "New York"
-  },
-  {
-    "city": "Mount Kisco",
     "state": "New York"
   },
   {
@@ -15762,10 +15129,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Newark",
-    "state": "New York"
-  },
-  {
-    "city": "Newburgh",
     "state": "New York"
   },
   {
@@ -15929,23 +15292,11 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Ossining",
-    "state": "New York"
-  },
-  {
-    "city": "Oswego",
-    "state": "New York"
-  },
-  {
     "city": "Oswego",
     "state": "New York"
   },
   {
     "city": "Owego",
-    "state": "New York"
-  },
-  {
-    "city": "Oyster Bay",
     "state": "New York"
   },
   {
@@ -15978,10 +15329,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Peekskill",
-    "state": "New York"
-  },
-  {
-    "city": "Pelham",
     "state": "New York"
   },
   {
@@ -16037,10 +15384,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Plattsburgh",
-    "state": "New York"
-  },
-  {
     "city": "Pleasant Valley",
     "state": "New York"
   },
@@ -16085,14 +15428,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Potsdam",
-    "state": "New York"
-  },
-  {
-    "city": "Poughkeepsie",
-    "state": "New York"
-  },
-  {
     "city": "Poughkeepsie",
     "state": "New York"
   },
@@ -16133,14 +15468,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Riverhead",
-    "state": "New York"
-  },
-  {
-    "city": "Rochester",
-    "state": "New York"
-  },
-  {
     "city": "Rochester",
     "state": "New York"
   },
@@ -16177,15 +15504,7 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Rotterdam",
-    "state": "New York"
-  },
-  {
     "city": "Royalton",
-    "state": "New York"
-  },
-  {
-    "city": "Rye",
     "state": "New York"
   },
   {
@@ -16222,10 +15541,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Sayville",
-    "state": "New York"
-  },
-  {
-    "city": "Scarsdale",
     "state": "New York"
   },
   {
@@ -16272,14 +15587,7 @@ export const cityStatePairs = [
     "city": "Seneca Falls",
     "state": "New York"
   },
-  {
-    "city": "Seneca Falls",
-    "state": "New York"
-  },
-  {
-    "city": "Setauket-East Setauket",
-    "state": "New York"
-  },
+
   {
     "city": "Shawangunk",
     "state": "New York"
@@ -16298,10 +15606,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Sleepy Hollow",
-    "state": "New York"
-  },
-  {
-    "city": "Smithtown",
     "state": "New York"
   },
   {
@@ -16357,10 +15661,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Southport",
-    "state": "New York"
-  },
-  {
     "city": "Spring Valley",
     "state": "New York"
   },
@@ -16374,10 +15674,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Stony Brook",
-    "state": "New York"
-  },
-  {
-    "city": "Stony Point",
     "state": "New York"
   },
   {
@@ -16418,14 +15714,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Thompson",
-    "state": "New York"
-  },
-  {
-    "city": "Tonawanda",
-    "state": "New York"
-  },
-  {
-    "city": "Tonawanda",
     "state": "New York"
   },
   {
@@ -16513,10 +15801,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "Warwick",
-    "state": "New York"
-  },
-  {
     "city": "Waterford",
     "state": "New York"
   },
@@ -16577,10 +15861,6 @@ export const cityStatePairs = [
     "state": "New York"
   },
   {
-    "city": "West Seneca",
-    "state": "New York"
-  },
-  {
     "city": "Westbury",
     "state": "New York"
   },
@@ -16622,10 +15902,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Windsor",
-    "state": "New York"
-  },
-  {
-    "city": "Woodbury",
     "state": "New York"
   },
   {
@@ -16772,10 +16048,7 @@ export const cityStatePairs = [
     "city": "Fort Bragg",
     "state": "North Carolina"
   },
-  {
-    "city": "Fuquay-Varina",
-    "state": "North Carolina"
-  },
+
   {
     "city": "Garner",
     "state": "North Carolina"
@@ -17064,10 +16337,7 @@ export const cityStatePairs = [
     "city": "Wilson",
     "state": "North Carolina"
   },
-  {
-    "city": "Winston-Salem",
-    "state": "North Carolina"
-  },
+
   {
     "city": "Bismarck",
     "state": "North Dakota"
@@ -17664,10 +16934,7 @@ export const cityStatePairs = [
     "city": "Mentor",
     "state": "Ohio"
   },
-  {
-    "city": "Mentor-on-the-Lake",
-    "state": "Ohio"
-  },
+
   {
     "city": "Miamisburg",
     "state": "Ohio"
@@ -17750,10 +17017,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Northgate",
-    "state": "Ohio"
-  },
-  {
-    "city": "Northridge",
     "state": "Ohio"
   },
   {
@@ -18104,10 +17367,7 @@ export const cityStatePairs = [
     "city": "Wilmington",
     "state": "Ohio"
   },
-  {
-    "city": "Woodbourne-Hyde Park",
-    "state": "Ohio"
-  },
+
   {
     "city": "Wooster",
     "state": "Ohio"
@@ -18116,10 +17376,7 @@ export const cityStatePairs = [
     "city": "Worthington",
     "state": "Ohio"
   },
-  {
-    "city": "Wright-Patterson AFB",
-    "state": "Ohio"
-  },
+
   {
     "city": "Wyoming",
     "state": "Ohio"
@@ -18464,10 +17721,7 @@ export const cityStatePairs = [
     "city": "Four Corners",
     "state": "Oregon"
   },
-  {
-    "city": "Garden Home-Whitford",
-    "state": "Oregon"
-  },
+
   {
     "city": "Gladstone",
     "state": "Oregon"
@@ -18536,10 +17790,7 @@ export const cityStatePairs = [
     "city": "Medford",
     "state": "Oregon"
   },
-  {
-    "city": "Milton-Freewater",
-    "state": "Oregon"
-  },
+
   {
     "city": "Milwaukie",
     "state": "Oregon"
@@ -18652,10 +17903,7 @@ export const cityStatePairs = [
     "city": "Tualatin",
     "state": "Oregon"
   },
-  {
-    "city": "West Haven-Sylvan",
-    "state": "Oregon"
-  },
+
   {
     "city": "West Linn",
     "state": "Oregon"
@@ -18792,10 +18040,7 @@ export const cityStatePairs = [
     "city": "Carnegie",
     "state": "Pennsylvania"
   },
-  {
-    "city": "Carnot-Moon",
-    "state": "Pennsylvania"
-  },
+
   {
     "city": "Castle Shannon",
     "state": "Pennsylvania"
@@ -18964,10 +18209,7 @@ export const cityStatePairs = [
     "city": "Farrell",
     "state": "Pennsylvania"
   },
-  {
-    "city": "Feasterville-Trevose",
-    "state": "Pennsylvania"
-  },
+
   {
     "city": "Fernway",
     "state": "Pennsylvania"
@@ -19056,10 +18298,7 @@ export const cityStatePairs = [
     "city": "Hershey",
     "state": "Pennsylvania"
   },
-  {
-    "city": "Homeacre-Lyndora",
-    "state": "Pennsylvania"
-  },
+
   {
     "city": "Horsham",
     "state": "Pennsylvania"
@@ -19116,10 +18355,7 @@ export const cityStatePairs = [
     "city": "Latrobe",
     "state": "Pennsylvania"
   },
-  {
-    "city": "Leacock-Leola-Bareville",
-    "state": "Pennsylvania"
-  },
+
   {
     "city": "Lebanon",
     "state": "Pennsylvania"
@@ -19136,10 +18372,7 @@ export const cityStatePairs = [
     "city": "Linglestown",
     "state": "Pennsylvania"
   },
-  {
-    "city": "Lionville-Marchwood",
-    "state": "Pennsylvania"
-  },
+
   {
     "city": "Lititz",
     "state": "Pennsylvania"
@@ -19178,10 +18411,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Mechanicsburg",
-    "state": "Pennsylvania"
-  },
-  {
-    "city": "Middletown",
     "state": "Pennsylvania"
   },
   {
@@ -19508,10 +18737,7 @@ export const cityStatePairs = [
     "city": "Upper St. Clair",
     "state": "Pennsylvania"
   },
-  {
-    "city": "Village Green-Green Ridge",
-    "state": "Pennsylvania"
-  },
+
   {
     "city": "Warren",
     "state": "Pennsylvania"
@@ -19556,10 +18782,7 @@ export const cityStatePairs = [
     "city": "Whitehall",
     "state": "Pennsylvania"
   },
-  {
-    "city": "Wilkes-Barre",
-    "state": "Pennsylvania"
-  },
+
   {
     "city": "Wilkins Township",
     "state": "Pennsylvania"
@@ -19602,14 +18825,6 @@ export const cityStatePairs = [
   },
   {
     "city": "Barrington",
-    "state": "Rhode Island"
-  },
-  {
-    "city": "Barrington",
-    "state": "Rhode Island"
-  },
-  {
-    "city": "Bristol",
     "state": "Rhode Island"
   },
   {
@@ -19701,10 +18916,6 @@ export const cityStatePairs = [
     "state": "Rhode Island"
   },
   {
-    "city": "North Providence",
-    "state": "Rhode Island"
-  },
-  {
     "city": "North Smithfield",
     "state": "Rhode Island"
   },
@@ -19741,17 +18952,10 @@ export const cityStatePairs = [
     "state": "Rhode Island"
   },
   {
-    "city": "Tiverton",
-    "state": "Rhode Island"
-  },
-  {
     "city": "Valley Falls",
     "state": "Rhode Island"
   },
-  {
-    "city": "Wakefield-Peacedale",
-    "state": "Rhode Island"
-  },
+
   {
     "city": "Warren",
     "state": "Rhode Island"
@@ -19762,14 +18966,6 @@ export const cityStatePairs = [
   },
   {
     "city": "West Warwick",
-    "state": "Rhode Island"
-  },
-  {
-    "city": "West Warwick",
-    "state": "Rhode Island"
-  },
-  {
-    "city": "Westerly",
     "state": "Rhode Island"
   },
   {
@@ -20376,10 +19572,7 @@ export const cityStatePairs = [
     "city": "Murfreesboro",
     "state": "Tennessee"
   },
-  {
-    "city": "Nashville-Davidson",
-    "state": "Tennessee"
-  },
+
   {
     "city": "Newport",
     "state": "Tennessee"
@@ -20432,10 +19625,7 @@ export const cityStatePairs = [
     "city": "Smyrna",
     "state": "Tennessee"
   },
-  {
-    "city": "Soddy-Daisy",
-    "state": "Tennessee"
-  },
+
   {
     "city": "South Cleveland",
     "state": "Tennessee"
@@ -21901,19 +21091,7 @@ export const cityStatePairs = [
     "state": "Vermont"
   },
   {
-    "city": "Barre",
-    "state": "Vermont"
-  },
-  {
     "city": "Bennington",
-    "state": "Vermont"
-  },
-  {
-    "city": "Bennington",
-    "state": "Vermont"
-  },
-  {
-    "city": "Brattleboro",
     "state": "Vermont"
   },
   {
@@ -21970,10 +21148,6 @@ export const cityStatePairs = [
   },
   {
     "city": "St. Albans",
-    "state": "Vermont"
-  },
-  {
-    "city": "St. Johnsbury",
     "state": "Vermont"
   },
   {
@@ -22540,10 +21714,7 @@ export const cityStatePairs = [
     "city": "Brier",
     "state": "Washington"
   },
-  {
-    "city": "Bryn Mawr-Skyway",
-    "state": "Washington"
-  },
+
   {
     "city": "Burien",
     "state": "Washington"
@@ -22560,10 +21731,7 @@ export const cityStatePairs = [
     "city": "Camas",
     "state": "Washington"
   },
-  {
-    "city": "Cascade-Fairwood",
-    "state": "Washington"
-  },
+
   {
     "city": "Centralia",
     "state": "Washington"
@@ -22580,10 +21748,7 @@ export const cityStatePairs = [
     "city": "Clarkston",
     "state": "Washington"
   },
-  {
-    "city": "Clarkston Heights-Vineland",
-    "state": "Washington"
-  },
+
   {
     "city": "College Place",
     "state": "Washington"
@@ -22604,10 +21769,7 @@ export const cityStatePairs = [
     "city": "Dishman",
     "state": "Washington"
   },
-  {
-    "city": "East Hill-Meridian",
-    "state": "Washington"
-  },
+
   {
     "city": "East Renton Highlands",
     "state": "Washington"
@@ -22692,10 +21854,7 @@ export const cityStatePairs = [
     "city": "Hoquiam",
     "state": "Washington"
   },
-  {
-    "city": "Inglewood-Finn Hill",
-    "state": "Washington"
-  },
+
   {
     "city": "Issaquah",
     "state": "Washington"
@@ -22732,10 +21891,7 @@ export const cityStatePairs = [
     "city": "Lake Forest Park",
     "state": "Washington"
   },
-  {
-    "city": "Lake Morton-Berrydale",
-    "state": "Washington"
-  },
+
   {
     "city": "Lake Shore",
     "state": "Washington"
@@ -22860,14 +22016,8 @@ export const cityStatePairs = [
     "city": "Orchards",
     "state": "Washington"
   },
-  {
-    "city": "Otis Orchards-East Farms",
-    "state": "Washington"
-  },
-  {
-    "city": "Paine Field-Lake Stickney",
-    "state": "Washington"
-  },
+
+
   {
     "city": "Parkland",
     "state": "Washington"
@@ -22880,10 +22030,7 @@ export const cityStatePairs = [
     "city": "Pasco",
     "state": "Washington"
   },
-  {
-    "city": "Picnic Point-North Lynnwood",
-    "state": "Washington"
-  },
+
   {
     "city": "Port Angeles",
     "state": "Washington"
@@ -22924,10 +22071,7 @@ export const cityStatePairs = [
     "city": "Richland",
     "state": "Washington"
   },
-  {
-    "city": "Riverton-Boulevard Park",
-    "state": "Washington"
-  },
+
   {
     "city": "Salmon Creek",
     "state": "Washington"
@@ -22944,14 +22088,8 @@ export const cityStatePairs = [
     "city": "Seattle",
     "state": "Washington"
   },
-  {
-    "city": "Seattle Hill-Silver Firs",
-    "state": "Washington"
-  },
-  {
-    "city": "Sedro-Woolley",
-    "state": "Washington"
-  },
+
+
   {
     "city": "Selah",
     "state": "Washington"
@@ -23020,10 +22158,7 @@ export const cityStatePairs = [
     "city": "Tumwater",
     "state": "Washington"
   },
-  {
-    "city": "Union Hill-Novelty Hill",
-    "state": "Washington"
-  },
+
   {
     "city": "University Place",
     "state": "Washington"
