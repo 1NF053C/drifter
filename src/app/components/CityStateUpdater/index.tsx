@@ -1,23 +1,23 @@
 "use client";
 
 import './index.css';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
+
 import { useCityStateSearch } from './hooks/useCityStateSearch';
 import { useCityStateUpdater } from './hooks/useCityStateUpdater';
 
+import { useFrameSVGAssembler, FrameSVGCorners } from '@arwes/react';
+import { useFocusOnLoad } from './hooks/useFocusOnLoad';
+
 export function CityStateUpdater() {
-    const inputRef = useRef<any>(null)
 
-    useEffect(() => {
-        if(inputRef.current) inputRef.current.focus();
-    }, [])
-
-    const [searchText, setSearchText] = useState(''); // searchText is typed text, but not selected option text
-    const [text, setText] = useState(''); // text is both typed text and selected option text
-    const [selectedOption, setSelectedOption] = useState('');
-
+    const [text, setText] = useState('');             // visible input text is both typed text and selected option text
+    const [searchText, setSearchText] = useState(''); // trigger search if user types input text but don't trigger search if user selects option
     const results = useCityStateSearch(searchText);
+    const [selectedOption, setSelectedOption] = useState(''); // trigger city state update if user selects option
     useCityStateUpdater(selectedOption);
+
+    const ref = useFocusOnLoad();   // focus on input element when component loads
 
     function handleChange(e: any) {
         setText(e.target.value);
@@ -38,16 +38,18 @@ export function CityStateUpdater() {
     }
 
     return (
-        <>
+        <div style={{ position: 'relative', width: '400px', height: '40px' }}>
             <div className='search'>
-                <input
-                    ref={inputRef}
-                    placeholder="Enter City, State..."
-                    onChange={handleChange}
-                    onKeyDown={handleKeydown}
-                    className='search search__input'
-                    value={text}
-                />
+                <Glowinput>
+                    <input
+                        ref={ref}
+                        placeholder="City, State"
+                        onChange={handleChange}
+                        onKeyDown={handleKeydown}
+                        className='search search__input'
+                        value={text}
+                    />
+                </Glowinput>
                 <select
                     className="search search__select"
                     value={selectedOption}
@@ -62,6 +64,27 @@ export function CityStateUpdater() {
                     }
                 </select>
             </div>
-        </>
+        </div>
+    )
+}
+
+const Glowinput = ({ children }: any) => {
+    const frameRef = useRef<SVGSVGElement | null>(null);
+    useFrameSVGAssembler(frameRef);
+    return (
+        <div className="glowinput">
+            <FrameSVGCorners
+                elementRef={frameRef}
+                style={{
+                    // @ts-expect-error css variables
+                    '--arwes-frames-bg-color': 'hsl(60, 75%, 10%)',
+                    '--arwes-frames-bg-filter': 'drop-shadow(0 0 2px hsl(60, 75%, 10%))',
+                    '--arwes-frames-line-color': 'hsl(60, 75%, 50%)',
+                    '--arwes-frames-line-filter': 'drop-shadow(0 0 2px hsl(60, 75%, 50%))'
+                }}
+                padding={4}
+            />
+            {children}
+        </div>
     )
 }

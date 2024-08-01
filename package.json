@@ -13,9 +13,10 @@
   },
   "dependencies": {
     "@1nf053c/mapbox-map": "^0.1.7",
-    "@arwes/react": "^1.0.0-alpha.23",
-    "@arwes/react-animator": "^1.0.0-next.24072501",
+    "@arwes/react": "^1.0.0-next.24072801",
+    "@emotion/babel-plugin": "^11.12.0",
     "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
     "@prisma/client": "^5.17.0",
     "axios": "^1.7.2",
     "fuse.js": "^7.0.0",
@@ -26,6 +27,7 @@
     "ts-runtime-checks": "^0.6.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@types/node": "^20.14.12",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18",

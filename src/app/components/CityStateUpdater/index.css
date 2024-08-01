@@ -1,4 +1,5 @@
 .search {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -6,7 +7,9 @@
 }
 
 .search__input {
+    display: block;
     width: 100%;
+    height: 100%;
     border: none;
     outline: none;
     color: white;
@@ -20,4 +23,9 @@
 .search__input::placeholder {
     color: white;
     opacity: .5;
+}
+
+.glowinput {
+    height: 100%;
+    width: 100%;
 }
