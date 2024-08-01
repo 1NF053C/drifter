@@ -1,3 +1,5 @@
+import './index.css';
+
 export interface PlaceListItemProps {
     url: string,
     summary: string
@@ -7,10 +9,10 @@ export interface PlaceListItemProps {
 
 export function PlaceListItem({ url, summary }: PlaceListItemProps) {
     return (
-        <>
-            <div>{url}</div>
+        <div className='place-list-item'>
+            <a href={url}>{url}</a>
             <div>{summary}</div>
-        </>
+        </div>
     )
 }
 

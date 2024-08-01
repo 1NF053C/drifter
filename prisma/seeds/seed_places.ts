@@ -12,10 +12,12 @@ export async function seed_places() {
     for (const p of places) {
         await placeService.delete(p.id);
     }
-    await placeService.create({
-        url: 'https://' + faker.string.uuid(),
-        summary: faker.lorem.paragraph()
-    });
+    for (const e in [1, 2, 3, 4, 5]) {
+        await placeService.create({
+            url: 'https://' + faker.string.uuid(),
+            summary: faker.lorem.paragraph()
+        });
+    }
 
     await prisma.$disconnect();
 
