@@ -11,6 +11,7 @@ export function PlaceListContainer() {
     if (!data || data.length === 0) return <div>no place list</div>;
 
     const renderKey = JSON.stringify(data);
+
     return (
         <div style={{ height: 400, width: '100%' }}>
             <PlaceList

@@ -16,7 +16,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 }
 
-async function getPlace(req: NextApiRequest, res: NextApiResponse) {
+async function getPlace(_req: NextApiRequest, res: NextApiResponse) {
     const place = await placeService.findAll()
     res.status(200).json(place)
 }

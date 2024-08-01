@@ -10,6 +10,6 @@ CREATE TABLE "MapboxPublicConfig" (
 -- CreateTable
 CREATE TABLE "Place" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    "url" TEXT NOT NULL,
-    "summary" TEXT NOT NULL
+    "name" TEXT NOT NULL,
+    "rawText" TEXT NOT NULL
 );

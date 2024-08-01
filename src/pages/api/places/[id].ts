@@ -20,7 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 }
 
-async function getPlace(req: NextApiRequest, res: NextApiResponse, id: number) {
+async function getPlace(_req: NextApiRequest, res: NextApiResponse, id: number) {
     const place = await placeService.findOne(id)
     if (place) {
         res.status(200).json(place)
@@ -43,7 +43,7 @@ async function updatePlace(req: NextApiRequest, res: NextApiResponse, id: number
     }
 }
 
-async function deletePlace(req: NextApiRequest, res: NextApiResponse, id: number) {
+async function deletePlace(_req: NextApiRequest, res: NextApiResponse, id: number) {
     await placeService.delete(id)
     res.status(204).end()
 }

@@ -1,17 +1,25 @@
+import { PlaceView } from '@/app/components/PlaceListContainer/views/PlaceView';
 import './index.css';
 
-export interface PlaceListItemProps {
-    url: string,
-    summary: string
-    //objective: string
-    //textMatchPreview: string
-}
+export interface PlaceListItemProps extends PlaceView { }
 
-export function PlaceListItem({ url, summary }: PlaceListItemProps) {
+export function PlaceListItem({ name, summary, objectives, textMatchPreview, urls, rawText }: PlaceListItemProps) {
     return (
         <div className='place-list-item'>
-            <a href={url}>{url}</a>
+            Name:
+            <div>{name}</div>
+            Objectives:
+            <ul>
+                {objectives.map(objective => <li key={objective}>{objective}</li>)}
+            </ul>
+            Summary:
             <div>{summary}</div>
+            Urls:
+            <ul>
+                {urls.map(url => <li key={url}>{url}</li>)}
+            </ul>
+            <div>{textMatchPreview}</div>
+            <div>{rawText}</div>
         </div>
     )
 }

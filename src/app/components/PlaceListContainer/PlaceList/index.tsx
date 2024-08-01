@@ -7,7 +7,17 @@ interface PlaceListProps {
 export function PlaceList({ data }: PlaceListProps) {
     return (
         <div>
-            {data.map(itemData => <PlaceListItem url={itemData.url} summary={itemData.summary} />)}
+            {data.map(({ name, urls, summary, textMatchPreview, objectives, rawText }) => (
+                <PlaceListItem
+                    key={name + rawText.slice(0, 5)}
+                    name={name}
+                    objectives={objectives}
+                    urls={urls}
+                    summary={summary}
+                    textMatchPreview={textMatchPreview}
+                    rawText={rawText}
+                />)
+            )}
         </div>
     )
 }

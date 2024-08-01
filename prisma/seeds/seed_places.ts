@@ -12,10 +12,19 @@ export async function seed_places() {
     for (const p of places) {
         await placeService.delete(p.id);
     }
-    for (const e in [1, 2, 3, 4, 5]) {
+
+    const mockNames = ["mock_url_one_ninety", "alphacoffee_three", "sigma_melon_fifty", "potato_abstract_42"];
+
+    for (const name of mockNames) {
         await placeService.create({
-            url: 'https://' + faker.string.uuid(),
-            summary: faker.lorem.paragraph()
+            name: name + '.txt',
+            rawText: faker.lorem.paragraphs() + ' '
+                + "https://exampleUrl1" + '\n'
+                + "Our mission is to promote the great outdoors." + ' '
+                + "https://exampleUrl2" + '\n'
+                + faker.lorem.paragraphs() + '\n'
+                + faker.lorem.paragraphs() + '\n'
+                + "Our company's main objective is to provide affordable running shoes for all." + '\n'
         });
     }
 
