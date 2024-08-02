@@ -4,10 +4,9 @@ import { MapboxPublicConfigService } from '../helpers/DbClientFactory';
 import { getHostPort } from '@/app/components/MapboxMapContainer/hooks/helpers/getHostPort'
 import { PrismaClient } from '@prisma/client'
 import axios from 'axios';
+import { seed_shoe_stores } from './seed_shoe_stores'
 
 export async function seed() {
-    console.log('Seeding database...')
-
     const prisma = new PrismaClient()
     const mapboxPublicConfigService = new MapboxPublicConfigService(prisma);
 
@@ -27,23 +26,18 @@ export async function seed() {
     await mapboxPublicConfigService.create({
         startLng: coords.lng,
         startLat: coords.lat,
-        zoomLevel: 19,
+        zoomLevel: 15,
         publicKey: MAPBOX_PUBLIC_KEY
     });
-
+    await print_all(mapboxPublicConfigService);
     await prisma.$disconnect();
-
-    console.log("Database seeded with mapbox config!")
 }
 
-async function print_all() {
-    const prisma = new PrismaClient()
-    const mapboxPublicConfigService = new MapboxPublicConfigService(prisma);
-
+async function print_all(mapboxPublicConfigService: MapboxPublicConfigService) {
     const loadedConfs = await mapboxPublicConfigService.findAll();
     console.log("mapboxPublicConfig", JSON.stringify(loadedConfs, null, 4));
 }
 
 seed()
-    .then(async () => await print_all())
+    .then(async () => await seed_shoe_stores())
     .catch(err => console.log(err))
