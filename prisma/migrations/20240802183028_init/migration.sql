@@ -6,10 +6,3 @@ CREATE TABLE "MapboxPublicConfig" (
     "startLat" REAL NOT NULL,
     "zoomLevel" INTEGER NOT NULL
 );
-
--- CreateTable
-CREATE TABLE "Place" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    "name" TEXT NOT NULL,
-    "rawText" TEXT NOT NULL
-);

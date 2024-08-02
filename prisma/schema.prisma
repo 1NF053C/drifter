@@ -21,13 +21,3 @@ model MapboxPublicConfig {
   zoomLevel Int
 }
 
-model Place {
-  id  Int @id @default(autoincrement())
-  name String
-  rawText String
-  // url String
-  // summary String 
-  // summary prog: computed # todo app vs sqlite
-  // objective prog: extracted # todo app vs sqlite
-  // textMatchPreview prog: extracted # todo app vs sqlite
-}
