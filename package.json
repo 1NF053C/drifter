@@ -14,9 +14,6 @@
   "dependencies": {
     "@1nf053c/mapbox-map": "^0.1.7",
     "@arwes/react": "^1.0.0-next.24072801",
-    "@emotion/babel-plugin": "^11.12.0",
-    "@emotion/react": "^11.13.0",
-    "@emotion/styled": "^11.13.0",
     "@prisma/client": "^5.17.0",
     "axios": "^1.7.2",
     "compromise": "^14.14.0",

@@ -1,5 +1,8 @@
 require('dotenv').config({ path: '.env.local' });
 
+import fs from 'fs/promises';
+import path from 'path';
+
 import { PlaceService } from '../helpers/DbClientFactory';
 import { PrismaClient } from '@prisma/client'
 
@@ -12,19 +15,33 @@ export async function seed_places() {
         await placeService.delete(p.id);
     }
 
-    const mockNames = ["mock_url_one_ninety", "alphacoffee_three", "sigma_melon_fifty", "potato_abstract_42"];
+    const seedFiles = await readSeedFiles();
 
-    for (const name of mockNames) {
-        await placeService.create({
-            name: name + '.txt',
-            rawText: `React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.[9][10] A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary rerendering of unchanged DOM elements. It was first launched on 29 May 2013.` + ' '
-                + "https://exampleUrl1" + '\n'
-                + "Our mission is to promote the great outdoors." + ' '
-                + "https://exampleUrl2" + '\n'
-                + `React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.[9][10] A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary rerendering of unchanged DOM elements. It was first launched on 29 May 2013.` + '\n'
-                + `React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.[9][10] A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary rerendering of unchanged DOM elements. It was first launched on 29 May 2013.` + '\n'
-                + "Our company's main objective is to provide affordable running shoes for all." + '\n'
-        });
+    const ops = [];
+    for (const seedFile of seedFiles) {
+        ops.push(
+            await placeService.create({
+                name: seedFile.name,
+                rawText: seedFile.content.toString()
+            })
+        );
+    }
+
+    async function readSeedFiles() {
+        try {
+            const dirpath = path.join(__dirname, './files')
+            const files = await fs.readdir(dirpath);
+            const readFiles = files.map(async (file: string) => {
+                const filepath = path.join(dirpath, file)
+                const content = await fs.readFile(filepath);
+                return { name: file, content: content }
+            })
+            const results = await Promise.all(readFiles);
+            return results;
+        }
+        catch (error) {
+            throw error;
+        }
     }
 
     await prisma.$disconnect();
