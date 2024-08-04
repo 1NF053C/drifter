@@ -10,6 +10,10 @@ tsconfig.tsbuildinfo
 **/*/tsconfig.tsbuildinfo
 *.sif
 docs/
+env
+prisma/data/raw
+prisma/data/processed
+
 
 prisma/generated/
 prisma/database

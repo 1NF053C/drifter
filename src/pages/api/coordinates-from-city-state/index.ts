@@ -4,10 +4,8 @@ import axios from 'axios';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     switch (req.method) {
         case 'GET':
-            return getCoords(req, res);
-        case 'POST':
-            const { cityState } = req.body
-            return getCoords(req, res, String(cityState));
+            if (req.body.cityState) return getCoords(req, res, String(req.body.cityState));
+            else return getCoords(req, res);
         default:
             return res.status(405).end(`Method ${req.method} Not Allowed`)
     }

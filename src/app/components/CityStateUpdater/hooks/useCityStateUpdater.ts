@@ -10,9 +10,8 @@ export function useCityStateUpdater(selectedOption: string) {
         const putData = async () => {
             if(selectedOption.length === 0) return;
             try {
-                const response = await axios.post(`${getHostPort()}/api/coordinates-from-city`, {
-                    cityState: selectedOption
-                });
+                // todo: review OWASP
+                const response = await axios.get(`${getHostPort()}/api/coordinates-from-city?cityState=${encodeURIComponent(selectedOption)}`);
                 const configs = await mapboxPublicConfigService.findAll();
                 const config = configs[0];
                 config.startLat = response.data.lat;
