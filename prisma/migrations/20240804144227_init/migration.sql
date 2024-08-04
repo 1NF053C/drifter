@@ -8,7 +8,7 @@ CREATE TABLE "MapboxPublicConfig" (
 );
 
 -- CreateTable
-CREATE TABLE "ShoeStore" (
+CREATE TABLE "RunningShoeStore" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     "name" TEXT NOT NULL,
     "streetAddress" TEXT NOT NULL,

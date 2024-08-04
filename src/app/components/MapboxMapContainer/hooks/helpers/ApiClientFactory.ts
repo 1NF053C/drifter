@@ -1,15 +1,15 @@
-import { Prisma, MapboxPublicConfig, ShoeStore } from '@prisma/client';
+import { Prisma, MapboxPublicConfig, RunningShoeStore } from '@prisma/client';
 import { getHostPort } from './getHostPort';
 import { BaseApiClient } from './BaseApiClient';
 
 export class MapboxPublicConfigService extends BaseApiClient<MapboxPublicConfig, Prisma.MapboxPublicConfigCreateInput, Prisma.MapboxPublicConfigUpdateInput> {
   constructor() {
-    super(`${getHostPort()}/api/mapbox-public-config`);
+    super(`${getHostPort()}/api/repositories/mapbox-public-config`);
   }
 }
 
-export class ShoeStoreService extends BaseApiClient<ShoeStore, Prisma.ShoeStoreCreateInput, Prisma.ShoeStoreUpdateInput> {
+export class RunningShoeStoreService extends BaseApiClient<RunningShoeStore, Prisma.RunningShoeStoreCreateInput, Prisma.RunningShoeStoreUpdateInput> {
   constructor() {
-    super(`${getHostPort()}/api/shoe-stores`);
+    super(`${getHostPort()}/api/repositories/running-shoe-stores`);
   }
 }

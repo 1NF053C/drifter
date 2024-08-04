@@ -10,7 +10,7 @@ export function useCityStateUpdater(selectedOption: string) {
         const putData = async () => {
             if(selectedOption.length === 0) return;
             try {
-                const response = await axios.post(`${getHostPort()}/api/geocode`, {
+                const response = await axios.post(`${getHostPort()}/api/coordinates-from-city`, {
                     cityState: selectedOption
                 });
                 const configs = await mapboxPublicConfigService.findAll();

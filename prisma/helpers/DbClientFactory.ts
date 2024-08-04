@@ -1,4 +1,4 @@
-import { MapboxPublicConfig, Prisma, PrismaClient, ShoeStore } from "@prisma/client";
+import { MapboxPublicConfig, Prisma, PrismaClient, RunningShoeStore } from "@prisma/client";
 import { BaseDbClient } from "./BaseDbClient";
 
 export class MapboxPublicConfigService extends BaseDbClient<MapboxPublicConfig, Prisma.MapboxPublicConfigCreateInput, Prisma.MapboxPublicConfigUpdateInput> {
@@ -7,8 +7,8 @@ export class MapboxPublicConfigService extends BaseDbClient<MapboxPublicConfig, 
     }
 }
 
-export class ShoeStoreService extends BaseDbClient<ShoeStore, Prisma.ShoeStoreCreateInput, Prisma.ShoeStoreUpdateInput> {
+export class RunningShoeStoreService extends BaseDbClient<RunningShoeStore, Prisma.RunningShoeStoreCreateInput, Prisma.RunningShoeStoreUpdateInput> {
     constructor(prisma: PrismaClient) {
-        super(prisma, 'shoeStore')
+        super(prisma, 'runningShoeStore')
     }
 }

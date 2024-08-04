@@ -1,37 +1,37 @@
-import { ShoeStoreService } from '../helpers/DbClientFactory';
+import { RunningShoeStoreService } from '../helpers/DbClientFactory';
 import { PrismaClient } from '@prisma/client';
 
 export async function seed_shoe_stores() {
     const prisma = new PrismaClient()
-    const shoeStoreService = new ShoeStoreService(prisma);
+    const runningShoeStore = new RunningShoeStoreService(prisma);
 
-    const confs = await shoeStoreService.findAll();
+    const confs = await runningShoeStore.findAll();
     for (const c of confs) {
-        await shoeStoreService.delete(c.id);
+        await runningShoeStore.delete(c.id);
     }
-    await shoeStoreService.create({
+    await runningShoeStore.create({
         name: "abc",
         streetAddress: "(random mock data)221A Baker Street, London, UK",
         lng: -74.57880543786581,
         lat: 39.27652009732938
     });
-    await shoeStoreService.create({
+    await runningShoeStore.create({
         name: "def",
         streetAddress: "(random mock data)221B Baker Street, London, UK",
         lng: -74.57369904382223,
         lat: 39.28116121809153
     });
-    await shoeStoreService.create({
+    await runningShoeStore.create({
         name: "ghi",
         streetAddress: "(random mock data)221C Baker Street, London, UK",
         lng: -74.56329077966784,
         lat: 39.286222111797436
     });
-    await print_all(shoeStoreService);
+    await print_all(runningShoeStore);
     await prisma.$disconnect();
 }
 
-async function print_all(shoeStoreService: ShoeStoreService) {
-    const loadedConfs = await shoeStoreService.findAll();
-    console.log("shoeStore", JSON.stringify(loadedConfs, null, 4));
+async function print_all(runningShoeStore: RunningShoeStoreService) {
+    const loadedConfs = await runningShoeStore.findAll();
+    console.log("runningShoeStore", JSON.stringify(loadedConfs, null, 4));
 }

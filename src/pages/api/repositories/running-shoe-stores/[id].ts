@@ -1,9 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { PrismaClient, Prisma } from '@prisma/client';
-import { ShoeStoreService } from '@/../prisma/helpers/DbClientFactory';
+import { RunningShoeStoreService } from '@/../prisma/helpers/DbClientFactory';
 
 const prisma = new PrismaClient()
-const shoeStoreService = new ShoeStoreService(prisma)
+const runningShoeStoreService = new RunningShoeStoreService(prisma)
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const { id } = req.query
@@ -21,9 +21,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 }
 
 async function getShoeStore(req: NextApiRequest, res: NextApiResponse, id: number) {
-    const shoeStore = await shoeStoreService.findOne(id)
-    if (shoeStore) {
-        res.status(200).json(shoeStore)
+    const runningShoeStore = await runningShoeStoreService.findOne(id)
+    if (runningShoeStore) {
+        res.status(200).json(runningShoeStore)
     } else {
         res.status(404).json({ message: 'ShoeStore not found' })
     }
@@ -31,8 +31,8 @@ async function getShoeStore(req: NextApiRequest, res: NextApiResponse, id: numbe
 
 async function updateShoeStore(req: NextApiRequest, res: NextApiResponse, id: number) {
     try {
-        const shoeStoreData = req.body;
-        const updatedShoeStore = await shoeStoreService.update(id, shoeStoreData)
+        const runningShoeStoreData = req.body;
+        const updatedShoeStore = await runningShoeStoreService.update(id, runningShoeStoreData)
         res.status(201).json(updatedShoeStore)
     } catch (error) {
         if (error instanceof Prisma.PrismaClientKnownRequestError) {
@@ -44,6 +44,6 @@ async function updateShoeStore(req: NextApiRequest, res: NextApiResponse, id: nu
 }
 
 async function deleteShoeStore(req: NextApiRequest, res: NextApiResponse, id: number) {
-    await shoeStoreService.delete(id)
+    await runningShoeStoreService.delete(id)
     res.status(204).end()
 }

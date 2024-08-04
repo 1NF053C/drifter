@@ -1,30 +1,30 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import { PrismaClient, Prisma } from '@prisma/client'
-import { ShoeStoreService } from '@/../prisma/helpers/DbClientFactory';
+import { RunningShoeStoreService } from '@/../prisma/helpers/DbClientFactory';
 
 const prisma = new PrismaClient()
-const shoeStoreService = new ShoeStoreService(prisma)
+const runningShoeService = new RunningShoeStoreService(prisma)
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     switch (req.method) {
         case 'GET':
-            return getShoeStore(req, res);
+            return getRunningShoeStore(req, res);
         case 'POST':
-            return createShoeStore(req, res)
+            return createRunningShoeStore(req, res)
         default:
             return res.status(405).end(`Method ${req.method} Not Allowed`)
     }
 }
 
-async function getShoeStore(req: NextApiRequest, res: NextApiResponse) {
-    const shoeStore = await shoeStoreService.findAll()
-    res.status(200).json(shoeStore)
+async function getRunningShoeStore(req: NextApiRequest, res: NextApiResponse) {
+    const runningShoeStore = await runningShoeService.findAll()
+    res.status(200).json(runningShoeStore)
 }
 
-async function createShoeStore(req: NextApiRequest, res: NextApiResponse) {
+async function createRunningShoeStore(req: NextApiRequest, res: NextApiResponse) {
     try {
-        const shoeStoreData = req.body
-        const newShoeStore = await shoeStoreService.create(shoeStoreData)
+        const runningShoeStoreData = req.body
+        const newShoeStore = await runningShoeService.create(runningShoeStoreData)
         res.status(201).json(newShoeStore)
     } catch (error) {
         console.log(error);

@@ -15,7 +15,7 @@ model MapboxPublicConfig {
   zoomLevel Int
 }
 
-model ShoeStore {
+model RunningShoeStore {
   id    Int @id @default(autoincrement())
   name  String
   streetAddress String

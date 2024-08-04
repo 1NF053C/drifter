@@ -3,8 +3,8 @@ require('dotenv').config({ path: '.env.local' });
 import { MapboxPublicConfigService } from '../helpers/DbClientFactory';
 import { getHostPort } from '@/app/components/MapboxMapContainer/hooks/helpers/getHostPort'
 import { PrismaClient } from '@prisma/client'
-import axios from 'axios';
 import { seed_shoe_stores } from './seed_shoe_stores'
+import axios from 'axios';
 
 export async function seed() {
     const prisma = new PrismaClient()
@@ -20,7 +20,7 @@ export async function seed() {
     for (const c of confs) {
         await mapboxPublicConfigService.delete(c.id);
     }
-    const response = await axios.get(`${getHostPort()}/api/geocode`);
+    const response = await axios.get(`${getHostPort()}/api/coordinates-from-city`);
     const coords = response.data;
 
     await mapboxPublicConfigService.create({

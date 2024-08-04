@@ -9,7 +9,10 @@
     "start": "next start",
     "lint": "next lint",
     "db:migrate": "rm -rf prisma/migrations && npx prisma migrate reset -f && npx prisma generate && npx prisma migrate dev --name init",
-    "db:seed": "node --import tsx prisma/seeds/seed.ts"
+    "db:seed": "node --import tsx prisma/seeds/seed.ts",
+    "db:backup": "sqlite3 prisma/database/drifter.db .dump > prisma/database/backup.sql",
+    "db:restore": "rm prisma/database/drifter.db && sqlite3 prisma/database/drifter.db < prisma/database/backup.sql",
+    "db:studio": "npx prisma studio"
   },
   "dependencies": {
     "@1nf053c/mapbox-map": "^0.1.7",
